@@ -93,10 +93,11 @@ $(document).ready(function() {
         let i = $(currentPlayer.progress).attr('value')
         progressIndication = setInterval(function() {
             $(currentPlayer.progress).attr('value', currentPlayer.audio.currentTime)
-            if ($(currentPlayer.progress).attr('value') >= max) {
+            $('header h1').html(currentPlayer.audio.currentTime + "<br />" + $(currentPlayer.progress).attr('value') + "<br />" + max)
+            if (currentPlayer.audio.currentTime >= max) {
                 stopProgress(progressIndication, currentPlayer)
             }
-        }, 10)
+        }, 100)
     }
 
     function stopProgress(progressIndication, currentPlayer) {
@@ -121,7 +122,7 @@ $(document).ready(function() {
             }
             // @TODO: remove after testing
 
-        currentPlayer.audio.volume = 1
+        currentPlayer.audio.volume = 0.5
         if (currentPlayer.audio.paused == false) {
             // If the track is already playing...
             // console.info('Track is now PAUSED')
