@@ -1,0 +1,22 @@
+{
+  "name": "spotify-api",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thomasxbanks/spotify-player.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thomasxbanks/spotify-player.git/issues"
+  },
+  "scripts": {
+    "build": "mustache index.js myTemplate.mustache > public/output.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "thomasxbanks",
+  "license": "ISC",
+  "dependencies": {
+    "mustache": "^2.3.0"
+  }
+}
