@@ -1,0 +1,55 @@
+.track_wrapper {
+    font-size: 0;
+    margin: 20px auto;
+    padding: 5px;
+    background: #fefefe;
+    position: relative;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+
+    cite,
+    img {
+        display: block;
+    }
+
+    img {
+        padding: 0;
+        margin: 0;
+        vertical-align: top;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    cite {
+        font-size: 14px;
+        padding: 5px;
+        width: 100%;
+        font-style: normal;
+    }
+
+    audio {
+        position: absolute;
+        left: -50000px;
+    }
+
+    .audio-controls {
+        display: block;
+        font-size: 20px;
+    }
+
+    .audio-controls progress {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 100%;
+        height: 5px;
+        transition: ease-in 100ms;
+    }
+
+    progress[value]::-webkit-progress-bar {
+        background: #e8e8e8;
+        box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+    }
+
+    progress[value]::-webkit-progress-value {
+        background: linear-gradient(to left, #a00, #f00);
+    }
+}

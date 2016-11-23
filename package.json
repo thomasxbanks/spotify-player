@@ -11,12 +11,16 @@
     "url": "https://github.com/thomasxbanks/spotify-player.git/issues"
   },
   "scripts": {
-    "build": "mustache index.js myTemplate.mustache > public/output.html",
+    "build": "node-sass --output-style=compact css/style.scss style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "thomasxbanks",
   "license": "ISC",
   "dependencies": {
-    "mustache": "^2.3.0"
+    "mustache": "^2.3.0",
+    "oauthio": "^0.3.4"
+  },
+  "devDependencies": {
+    "node-sass": "^3.13.0"
   }
 }

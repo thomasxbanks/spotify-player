@@ -1,0 +1,48 @@
+html * {
+  box-sizing: border-box;
+}
+body {
+  background: #eeefef;
+  padding: 2vh 2vw;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+  color: #666;
+}
+main {
+  display: inline-block;
+  width: calc(100% - 300px);
+  float: left;
+  padding: 20px;
+}
+
+/*Header Contents*/
+header {
+  padding: 20px;
+}
+/*Footer Contents*/
+footer {
+  padding: 20px;
+}
+footer cite {
+  display: inline-block;
+  padding: 0 30px;
+  height: 60px;
+  line-height: 60px;
+  font-style: normal;
+  background: #fff;
+  border: 2px solid #1ed760;
+  border-radius: 30px;
+}
+footer cite img {
+  display: inline-block;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin: 15px 15px 15px 0;
+  vertical-align: middle;
+}
+footer cite a {
+  color: #1ED760;
+  text-decoration: none;
+  text-transform: uppercase;
+}

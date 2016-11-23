@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script id="trackTemplate" type="text/html">
+        <div class="track_wrapper">
+            <img src='{{art}}' />
+            <cite>
+              <strong>Artist: </strong>{{artist}}<br />
+              <strong>Album: </strong>{{album}}<br/>
+              <strong>Track: </strong>{{name}}
+            </cite>
+            <div class="audio-controls">
+                <progress max="30" value="0"></progress><br />
+                <button data-state="play">play</button>
+            </div>
+            <audio controls>
+              <source src="{{url}}" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+        </div>
+    </script>
+
+</body>
+
+</html>

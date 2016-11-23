@@ -1,53 +1,40 @@
-html * {
-  box-sizing: border-box;
-}
+html * { box-sizing: border-box; }
 
-/*Playlist Wrapper*/
-main {
-  padding: 20px;
-  font-size: 0;
-}
-.playlist_wrapper {
-  display: block;
-  vertical-align: bottom;
-  width: 300px;
-  height: 300px;
-  font-size: 14px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  color: #fff;
-  padding: 10px;
-}
+body { background: #eeefef; padding: 2vh 2vw; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 14px; color: #666; }
+
+main { display: inline-block; width: calc(100% - 300px); float: left; padding: 20px; }
 
 /*Header Contents*/
-header {
-  padding: 20px;
-}
+header { padding: 20px; }
+
 /*Footer Contents*/
-footer {
-  padding: 20px;
-}
-footer cite {
-  display: inline-block;
-  padding: 0 30px;
-  height: 60px;
-  line-height: 60px;
-  font-style: normal;
-  background: #fff;
-  border: 2px solid #1ed760;
-  border-radius: 30px;
-}
-footer cite img {
-  display: inline-block;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  margin: 15px 15px 15px 0;
-  vertical-align: middle;
-}
-footer cite a {
-  color: #1ED760;
-  text-decoration: none;
-  text-transform: uppercase;
-}
+footer { padding: 20px; }
+
+footer cite { display: inline-block; padding: 0 30px; height: 60px; line-height: 60px; font-style: normal; background: #fff; border: 2px solid #1ed760; border-radius: 30px; }
+
+footer cite img { display: inline-block; border-radius: 50%; width: 30px; height: 30px; margin: 15px 15px 15px 0; vertical-align: middle; }
+
+footer cite a { color: #1ED760; text-decoration: none; text-transform: uppercase; }
+
+/*Playlist Wrapper*/
+aside.playlister_wrapper { display: inline-block; vertical-align: top; font-size: 0; max-width: 300px; }
+
+.playlist_wrapper { display: table-cell; vertical-align: bottom; width: 300px; height: 300px; font-size: 14px; background-size: cover; background-repeat: no-repeat; background-position: center center; color: #fff; padding: 10px; }
+
+.track_wrapper { font-size: 0; margin: 20px auto; padding: 5px; background: #fefefe; position: relative; box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); }
+
+.track_wrapper cite, .track_wrapper img { display: block; }
+
+.track_wrapper img { padding: 0; margin: 0; vertical-align: top; width: 100%; object-fit: cover; }
+
+.track_wrapper cite { font-size: 14px; padding: 5px; width: 100%; font-style: normal; }
+
+.track_wrapper audio { position: absolute; left: -50000px; }
+
+.track_wrapper .audio-controls { display: block; font-size: 20px; }
+
+.track_wrapper .audio-controls progress { -webkit-appearance: none; appearance: none; width: 100%; height: 5px; transition: ease-in 100ms; }
+
+.track_wrapper progress[value]::-webkit-progress-bar { background: #e8e8e8; box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2); }
+
+.track_wrapper progress[value]::-webkit-progress-value { background: linear-gradient(to left, #a00, #f00); }

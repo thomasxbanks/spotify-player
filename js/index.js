@@ -4,6 +4,7 @@ $(document).ready(function() {
     // Define your variables
     const user_id = 'thomasxbanks'
     const playlist_id = '12euo5zUOLXaNvfrfvmHsl'
+    const access_token = 'BQBVwFj9Uet9NkzIHP7VvYhK3ZIsPpdRRtg70JGynynCyRpeLLNL9zCDUdu3ZwE3Ne7n6W5b5BosMfHMcruQgTbf6sGw45u36hItyqlX4fAxKdaKwITjnTDfkjWK9rPFOhdW1YGrPTKJ4zxGOCRgkuX5z32h1HJg8A'
 
     // Get publicly available user information
     $.get('https://api.spotify.com/v1/users/' + user_id, function(data) {
@@ -29,15 +30,14 @@ $(document).ready(function() {
 
 
     // Get oAuth playlist data
-
     $.ajax({
         url: 'https://api.spotify.com/v1/users/' + user_id + '/playlists/' + playlist_id,
-        context: document.getElementsByTagName('main')[0],
+        context: document.getElementsByTagName('aside')[0],
         crossDomain: true,
         dataType: "json",
         headers: {
             accept: 'application/json',
-            Authorization: 'Bearer BQAkeIA1R_yrsb7RRBc-IlvYEbAK9ROM6ujSwKdKIjzo7Meihn59rJ-kHQr90-NRyWk40h520QanyqqB_tD-wwtJqtubsAmsate_jwPoOqNt4xKtpE69xkTxJvuvb-EmbdqHxZo7sgEESu4P1EwIk31xcfZWBrlvlg'
+            Authorization: 'Bearer ' + access_token
         }
     }).done(function(data) {
         // Log for debug
@@ -71,14 +71,14 @@ $(document).ready(function() {
         $(this).html(playlister)
 
         // Display each track
-        $.get('track.html', function(templates) {
+        $.get('templates/track.html', function(templates) {
             // Fetch the <script /> block from the loaded external
-            // template file which contains our greetings template.
+            // template file which contains our track template.
             var template = $(templates).filter('#trackTemplate').html()
             $.each(tracksArray, function(i, obj) {
                 let tracktemplate = ''
                 let tracklist = Mustache.render(template, tracksArray[i])
-                $('main').append(tracklist)
+                $('.playlister_wrapper').append(tracklist)
             })
         })
 
@@ -93,7 +93,6 @@ $(document).ready(function() {
         let i = $(currentPlayer.progress).attr('value')
         progressIndication = setInterval(function() {
             $(currentPlayer.progress).attr('value', currentPlayer.audio.currentTime)
-            $('header h1').html(currentPlayer.audio.currentTime + "<br />" + $(currentPlayer.progress).attr('value') + "<br />" + max)
             if (currentPlayer.audio.currentTime >= max) {
                 stopProgress(progressIndication, currentPlayer)
             }
