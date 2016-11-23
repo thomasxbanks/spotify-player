@@ -17,8 +17,7 @@
   "author": "thomasxbanks",
   "license": "ISC",
   "dependencies": {
-    "mustache": "^2.3.0",
-    "oauthio": "^0.3.4"
+    "mustache": "^2.3.0"
   },
   "devDependencies": {
     "node-sass": "^3.13.0"
