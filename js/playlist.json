@@ -1,0 +1,811 @@
+{
+    "collaborative": true,
+    "description": "This is an example of a playlist description. It has a maximum of 300 characters. I can keep writing stuff here to give you an idea of what it&#x27;d look like with a lot more copy in it than could reasonably be expected. However, that this description field will never be displayed on the actual site....",
+    "external_urls": {
+        "spotify": "http://open.spotify.com/user/thomasxbanks/playlist/12euo5zUOLXaNvfrfvmHsl"
+    },
+    "followers": {
+        "href": null,
+        "total": 0
+    },
+    "href": "https://api.spotify.com/v1/users/thomasxbanks/playlists/12euo5zUOLXaNvfrfvmHsl",
+    "id": "12euo5zUOLXaNvfrfvmHsl",
+    "images": [{
+        "height": null,
+        "url": "https://u.scdn.co/images/pl/default/88efae0243ab1a8503f4c8b6de5dd2c84b2aa825",
+        "width": null
+    }],
+    "name": "Thom's playlist title can have a maximum of 100 characters. This is around 94 percent of that.",
+    "owner": {
+        "external_urls": {
+            "spotify": "http://open.spotify.com/user/thomasxbanks"
+        },
+        "href": "https://api.spotify.com/v1/users/thomasxbanks",
+        "id": "thomasxbanks",
+        "type": "user",
+        "uri": "spotify:user:thomasxbanks"
+    },
+    "public": false,
+    "snapshot_id": "DcztivYsePyKzy/79zU+YWN8aseeTXUuTd15KVjPPgnrHyUdTjn5MxgC1XsAQkay",
+    "tracks": {
+        "href": "https://api.spotify.com/v1/users/thomasxbanks/playlists/12euo5zUOLXaNvfrfvmHsl/tracks?offset=0&limit=100",
+        "items": [{
+            "added_at": "2016-11-23T10:10:26Z",
+            "added_by": {
+                "external_urls": {
+                    "spotify": "http://open.spotify.com/user/thomasxbanks"
+                },
+                "href": "https://api.spotify.com/v1/users/thomasxbanks",
+                "id": "thomasxbanks",
+                "type": "user",
+                "uri": "spotify:user:thomasxbanks"
+            },
+            "is_local": false,
+            "track": {
+                "album": {
+                    "album_type": "album",
+                    "artists": [{
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/7FBcuc1gsnv6Y1nwFtNRCb"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/7FBcuc1gsnv6Y1nwFtNRCb",
+                        "id": "7FBcuc1gsnv6Y1nwFtNRCb",
+                        "name": "My Chemical Romance",
+                        "type": "artist",
+                        "uri": "spotify:artist:7FBcuc1gsnv6Y1nwFtNRCb"
+                    }],
+                    "available_markets": ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY"],
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/album/0FZK97MXMm5mUQ8mtudjuK"
+                    },
+                    "href": "https://api.spotify.com/v1/albums/0FZK97MXMm5mUQ8mtudjuK",
+                    "id": "0FZK97MXMm5mUQ8mtudjuK",
+                    "images": [{
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/767fd98433e0d4ad11bc0e8edf605872bcb7a02c",
+                        "width": 640
+                    }, {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/b2ee36d1fb5876b80f2803580fe6714fc7978f7c",
+                        "width": 300
+                    }, {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/a801c22d36fc32ee7cc787561308274d801075e1",
+                        "width": 64
+                    }],
+                    "name": "The Black Parade",
+                    "type": "album",
+                    "uri": "spotify:album:0FZK97MXMm5mUQ8mtudjuK"
+                },
+                "artists": [{
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/artist/7FBcuc1gsnv6Y1nwFtNRCb"
+                    },
+                    "href": "https://api.spotify.com/v1/artists/7FBcuc1gsnv6Y1nwFtNRCb",
+                    "id": "7FBcuc1gsnv6Y1nwFtNRCb",
+                    "name": "My Chemical Romance",
+                    "type": "artist",
+                    "uri": "spotify:artist:7FBcuc1gsnv6Y1nwFtNRCb"
+                }],
+                "available_markets": ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY"],
+                "disc_number": 1,
+                "duration_ms": 161920,
+                "explicit": false,
+                "external_ids": {
+                    "isrc": "USRE10602912"
+                },
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/track/7j31rVgGX9Q2blT92VBEA0"
+                },
+                "href": "https://api.spotify.com/v1/tracks/7j31rVgGX9Q2blT92VBEA0",
+                "id": "7j31rVgGX9Q2blT92VBEA0",
+                "name": "Teenagers",
+                "popularity": 72,
+                "preview_url": "https://p.scdn.co/mp3-preview/7e780e073cb38e63e13544cd28a80d1eec88a49c",
+                "track_number": 11,
+                "type": "track",
+                "uri": "spotify:track:7j31rVgGX9Q2blT92VBEA0"
+            }
+        }, {
+            "added_at": "2016-11-21T15:52:54Z",
+            "added_by": {
+                "external_urls": {
+                    "spotify": "http://open.spotify.com/user/thomasxbanks"
+                },
+                "href": "https://api.spotify.com/v1/users/thomasxbanks",
+                "id": "thomasxbanks",
+                "type": "user",
+                "uri": "spotify:user:thomasxbanks"
+            },
+            "is_local": false,
+            "track": {
+                "album": {
+                    "album_type": "album",
+                    "artists": [{
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/3Ayl7mCk0nScecqOzvNp6s"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/3Ayl7mCk0nScecqOzvNp6s",
+                        "id": "3Ayl7mCk0nScecqOzvNp6s",
+                        "name": "Jimmy Eat World",
+                        "type": "artist",
+                        "uri": "spotify:artist:3Ayl7mCk0nScecqOzvNp6s"
+                    }],
+                    "available_markets": ["CA", "MX", "US"],
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/album/2ZuFyQ3E5n1L0VA9iyH0YV"
+                    },
+                    "href": "https://api.spotify.com/v1/albums/2ZuFyQ3E5n1L0VA9iyH0YV",
+                    "id": "2ZuFyQ3E5n1L0VA9iyH0YV",
+                    "images": [{
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/9f78f6b616dea4bb944e4fa20db1171455a4deeb",
+                        "width": 640
+                    }, {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/3a970133d606fc2b5e02af36d9a6244130ffd175",
+                        "width": 300
+                    }, {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/9e5f532f2b079e46e775e0057a7703e21eef76ad",
+                        "width": 64
+                    }],
+                    "name": "Bleed American (Deluxe Edition)",
+                    "type": "album",
+                    "uri": "spotify:album:2ZuFyQ3E5n1L0VA9iyH0YV"
+                },
+                "artists": [{
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/artist/3Ayl7mCk0nScecqOzvNp6s"
+                    },
+                    "href": "https://api.spotify.com/v1/artists/3Ayl7mCk0nScecqOzvNp6s",
+                    "id": "3Ayl7mCk0nScecqOzvNp6s",
+                    "name": "Jimmy Eat World",
+                    "type": "artist",
+                    "uri": "spotify:artist:3Ayl7mCk0nScecqOzvNp6s"
+                }],
+                "available_markets": ["CA", "MX", "US"],
+                "disc_number": 1,
+                "duration_ms": 168253,
+                "explicit": false,
+                "external_ids": {
+                    "isrc": "USDW10110256"
+                },
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/track/3mcG2NI5G5vhrQtRda1YnA"
+                },
+                "href": "https://api.spotify.com/v1/tracks/3mcG2NI5G5vhrQtRda1YnA",
+                "id": "3mcG2NI5G5vhrQtRda1YnA",
+                "name": "The Middle",
+                "popularity": 69,
+                "preview_url": "https://p.scdn.co/mp3-preview/7ff1030e28ecfb8a65453c4283e1d71dfe28c2aa",
+                "track_number": 3,
+                "type": "track",
+                "uri": "spotify:track:3mcG2NI5G5vhrQtRda1YnA"
+            }
+        }, {
+            "added_at": "2016-11-21T15:50:57Z",
+            "added_by": {
+                "external_urls": {
+                    "spotify": "http://open.spotify.com/user/thomasxbanks"
+                },
+                "href": "https://api.spotify.com/v1/users/thomasxbanks",
+                "id": "thomasxbanks",
+                "type": "user",
+                "uri": "spotify:user:thomasxbanks"
+            },
+            "is_local": false,
+            "track": {
+                "album": {
+                    "album_type": "album",
+                    "artists": [{
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/168dgYui7ExaU612eooDF1"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/168dgYui7ExaU612eooDF1",
+                        "id": "168dgYui7ExaU612eooDF1",
+                        "name": "Brand New",
+                        "type": "artist",
+                        "uri": "spotify:artist:168dgYui7ExaU612eooDF1"
+                    }],
+                    "available_markets": ["AU", "GB", "IE", "NZ"],
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/album/2r0pP3sWs8xhaai1fnkBtd"
+                    },
+                    "href": "https://api.spotify.com/v1/albums/2r0pP3sWs8xhaai1fnkBtd",
+                    "id": "2r0pP3sWs8xhaai1fnkBtd",
+                    "images": [{
+                        "height": 575,
+                        "url": "https://i.scdn.co/image/3321c2c2a15cb3e37a13576941adf20d801dc3e0",
+                        "width": 640
+                    }, {
+                        "height": 270,
+                        "url": "https://i.scdn.co/image/14f85bb55c324e800e18b4320073be540e3968fb",
+                        "width": 300
+                    }, {
+                        "height": 58,
+                        "url": "https://i.scdn.co/image/03f33e992809cbe09f9f10683f575194f061cacc",
+                        "width": 64
+                    }],
+                    "name": "The Devil And God Are Raging Inside Me (UK Version)",
+                    "type": "album",
+                    "uri": "spotify:album:2r0pP3sWs8xhaai1fnkBtd"
+                },
+                "artists": [{
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/artist/168dgYui7ExaU612eooDF1"
+                    },
+                    "href": "https://api.spotify.com/v1/artists/168dgYui7ExaU612eooDF1",
+                    "id": "168dgYui7ExaU612eooDF1",
+                    "name": "Brand New",
+                    "type": "artist",
+                    "uri": "spotify:artist:168dgYui7ExaU612eooDF1"
+                }],
+                "available_markets": ["AU", "GB", "IE", "NZ"],
+                "disc_number": 1,
+                "duration_ms": 318266,
+                "explicit": false,
+                "external_ids": {
+                    "isrc": "USUM70614449"
+                },
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/track/4NuIHP29mmJ9W75OCKrjNn"
+                },
+                "href": "https://api.spotify.com/v1/tracks/4NuIHP29mmJ9W75OCKrjNn",
+                "id": "4NuIHP29mmJ9W75OCKrjNn",
+                "name": "Jesus Christ",
+                "popularity": 44,
+                "preview_url": "https://p.scdn.co/mp3-preview/75291bfbe807967a38fffcdd2c9891dc7cfb4966",
+                "track_number": 3,
+                "type": "track",
+                "uri": "spotify:track:4NuIHP29mmJ9W75OCKrjNn"
+            }
+        }, {
+            "added_at": "2016-11-21T15:52:48Z",
+            "added_by": {
+                "external_urls": {
+                    "spotify": "http://open.spotify.com/user/thomasxbanks"
+                },
+                "href": "https://api.spotify.com/v1/users/thomasxbanks",
+                "id": "thomasxbanks",
+                "type": "user",
+                "uri": "spotify:user:thomasxbanks"
+            },
+            "is_local": false,
+            "track": {
+                "album": {
+                    "album_type": "album",
+                    "artists": [{
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/24XtlMhEMNdi822vi0MhY1"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/24XtlMhEMNdi822vi0MhY1",
+                        "id": "24XtlMhEMNdi822vi0MhY1",
+                        "name": "Taking Back Sunday",
+                        "type": "artist",
+                        "uri": "spotify:artist:24XtlMhEMNdi822vi0MhY1"
+                    }],
+                    "available_markets": ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY"],
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/album/6OWxP59cOtitg0ALmbms8e"
+                    },
+                    "href": "https://api.spotify.com/v1/albums/6OWxP59cOtitg0ALmbms8e",
+                    "id": "6OWxP59cOtitg0ALmbms8e",
+                    "images": [{
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/cfbc3a8449819cbc07413449529e0ac174793671",
+                        "width": 640
+                    }, {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/bda12d9d5b01ad03e345c4f7a34a1f40b55a4b03",
+                        "width": 300
+                    }, {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/0101ef62dcd1440ce3c5db999c232d2e5290df46",
+                        "width": 64
+                    }],
+                    "name": "Tell All Your Friends (Re-Issue)",
+                    "type": "album",
+                    "uri": "spotify:album:6OWxP59cOtitg0ALmbms8e"
+                },
+                "artists": [{
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/artist/24XtlMhEMNdi822vi0MhY1"
+                    },
+                    "href": "https://api.spotify.com/v1/artists/24XtlMhEMNdi822vi0MhY1",
+                    "id": "24XtlMhEMNdi822vi0MhY1",
+                    "name": "Taking Back Sunday",
+                    "type": "artist",
+                    "uri": "spotify:artist:24XtlMhEMNdi822vi0MhY1"
+                }],
+                "available_markets": ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY"],
+                "disc_number": 1,
+                "duration_ms": 211546,
+                "explicit": false,
+                "external_ids": {
+                    "isrc": "USVIC0528603"
+                },
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/track/1aYWQrIT8XPdtV4hhUjczN"
+                },
+                "href": "https://api.spotify.com/v1/tracks/1aYWQrIT8XPdtV4hhUjczN",
+                "id": "1aYWQrIT8XPdtV4hhUjczN",
+                "name": "Cute Without the \"E\" (Cut From the Team)",
+                "popularity": 63,
+                "preview_url": "https://p.scdn.co/mp3-preview/875bf6905834c42298aff8c0f326a9550ff8bf0f",
+                "track_number": 3,
+                "type": "track",
+                "uri": "spotify:track:1aYWQrIT8XPdtV4hhUjczN"
+            }
+        }, {
+            "added_at": "2016-11-21T15:53:00Z",
+            "added_by": {
+                "external_urls": {
+                    "spotify": "http://open.spotify.com/user/thomasxbanks"
+                },
+                "href": "https://api.spotify.com/v1/users/thomasxbanks",
+                "id": "thomasxbanks",
+                "type": "user",
+                "uri": "spotify:user:thomasxbanks"
+            },
+            "is_local": false,
+            "track": {
+                "album": {
+                    "album_type": "album",
+                    "artists": [{
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/1aEYCT7t18aM3VvM6y8oVR"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/1aEYCT7t18aM3VvM6y8oVR",
+                        "id": "1aEYCT7t18aM3VvM6y8oVR",
+                        "name": "Alkaline Trio",
+                        "type": "artist",
+                        "uri": "spotify:artist:1aEYCT7t18aM3VvM6y8oVR"
+                    }],
+                    "available_markets": ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY"],
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/album/1geOrMhJFz0gonGQ8A5e8m"
+                    },
+                    "href": "https://api.spotify.com/v1/albums/1geOrMhJFz0gonGQ8A5e8m",
+                    "id": "1geOrMhJFz0gonGQ8A5e8m",
+                    "images": [{
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/b4fb5e90571e68229f94191a2017919d8e74a71a",
+                        "width": 640
+                    }, {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/10f5a4e96c71fa5d0dad11064388c46054555fa0",
+                        "width": 300
+                    }, {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/1e345e0d61644260006a066091f760777383b3d9",
+                        "width": 64
+                    }],
+                    "name": "Maybe I'll Catch Fire",
+                    "type": "album",
+                    "uri": "spotify:album:1geOrMhJFz0gonGQ8A5e8m"
+                },
+                "artists": [{
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/artist/1aEYCT7t18aM3VvM6y8oVR"
+                    },
+                    "href": "https://api.spotify.com/v1/artists/1aEYCT7t18aM3VvM6y8oVR",
+                    "id": "1aEYCT7t18aM3VvM6y8oVR",
+                    "name": "Alkaline Trio",
+                    "type": "artist",
+                    "uri": "spotify:artist:1aEYCT7t18aM3VvM6y8oVR"
+                }],
+                "available_markets": ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY"],
+                "disc_number": 1,
+                "duration_ms": 281040,
+                "explicit": false,
+                "external_ids": {
+                    "isrc": "USB750405510"
+                },
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/track/3VVstQ0fpj4pdSPe2QZT5z"
+                },
+                "href": "https://api.spotify.com/v1/tracks/3VVstQ0fpj4pdSPe2QZT5z",
+                "id": "3VVstQ0fpj4pdSPe2QZT5z",
+                "name": "Radio",
+                "popularity": 50,
+                "preview_url": "https://p.scdn.co/mp3-preview/5cdb38573a53b3c4da4a6a6f2459a53a12450bce",
+                "track_number": 10,
+                "type": "track",
+                "uri": "spotify:track:3VVstQ0fpj4pdSPe2QZT5z"
+            }
+        }, {
+            "added_at": "2016-11-21T15:53:21Z",
+            "added_by": {
+                "external_urls": {
+                    "spotify": "http://open.spotify.com/user/thomasxbanks"
+                },
+                "href": "https://api.spotify.com/v1/users/thomasxbanks",
+                "id": "thomasxbanks",
+                "type": "user",
+                "uri": "spotify:user:thomasxbanks"
+            },
+            "is_local": false,
+            "track": {
+                "album": {
+                    "album_type": "album",
+                    "artists": [{
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/7FBcuc1gsnv6Y1nwFtNRCb"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/7FBcuc1gsnv6Y1nwFtNRCb",
+                        "id": "7FBcuc1gsnv6Y1nwFtNRCb",
+                        "name": "My Chemical Romance",
+                        "type": "artist",
+                        "uri": "spotify:artist:7FBcuc1gsnv6Y1nwFtNRCb"
+                    }],
+                    "available_markets": ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY"],
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/album/3DuiGV3J09SUhvp8gqNx8h"
+                    },
+                    "href": "https://api.spotify.com/v1/albums/3DuiGV3J09SUhvp8gqNx8h",
+                    "id": "3DuiGV3J09SUhvp8gqNx8h",
+                    "images": [{
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/9dd7cf8069b4ceea8070e8ebd71dc30f936c8dce",
+                        "width": 640
+                    }, {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/306fd7815c76547fb13173e3954a86b4974cbd47",
+                        "width": 300
+                    }, {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/eff4371b5991d225cc0599bb0b3974db4aac1398",
+                        "width": 64
+                    }],
+                    "name": "Three Cheers For Sweet Revenge",
+                    "type": "album",
+                    "uri": "spotify:album:3DuiGV3J09SUhvp8gqNx8h"
+                },
+                "artists": [{
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/artist/7FBcuc1gsnv6Y1nwFtNRCb"
+                    },
+                    "href": "https://api.spotify.com/v1/artists/7FBcuc1gsnv6Y1nwFtNRCb",
+                    "id": "7FBcuc1gsnv6Y1nwFtNRCb",
+                    "name": "My Chemical Romance",
+                    "type": "artist",
+                    "uri": "spotify:artist:7FBcuc1gsnv6Y1nwFtNRCb"
+                }],
+                "available_markets": ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY"],
+                "disc_number": 1,
+                "duration_ms": 204733,
+                "explicit": false,
+                "external_ids": {
+                    "isrc": "USRE10400656"
+                },
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/track/5dTHtzHFPyi8TlTtzoz1J9"
+                },
+                "href": "https://api.spotify.com/v1/tracks/5dTHtzHFPyi8TlTtzoz1J9",
+                "id": "5dTHtzHFPyi8TlTtzoz1J9",
+                "name": "Helena (So Long & Goodnight)",
+                "popularity": 68,
+                "preview_url": "https://p.scdn.co/mp3-preview/3622f88f8e0796726eee55afc6b2843c48cf75af",
+                "track_number": 1,
+                "type": "track",
+                "uri": "spotify:track:5dTHtzHFPyi8TlTtzoz1J9"
+            }
+        }, {
+            "added_at": "2016-11-21T15:53:37Z",
+            "added_by": {
+                "external_urls": {
+                    "spotify": "http://open.spotify.com/user/thomasxbanks"
+                },
+                "href": "https://api.spotify.com/v1/users/thomasxbanks",
+                "id": "thomasxbanks",
+                "type": "user",
+                "uri": "spotify:user:thomasxbanks"
+            },
+            "is_local": false,
+            "track": {
+                "album": {
+                    "album_type": "album",
+                    "artists": [{
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/528t5c0zyuG9beehtth4Za"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/528t5c0zyuG9beehtth4Za",
+                        "id": "528t5c0zyuG9beehtth4Za",
+                        "name": "Finch",
+                        "type": "artist",
+                        "uri": "spotify:artist:528t5c0zyuG9beehtth4Za"
+                    }],
+                    "available_markets": ["CA", "MX", "US"],
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/album/28DROCResQvsdO6Hjmb32x"
+                    },
+                    "href": "https://api.spotify.com/v1/albums/28DROCResQvsdO6Hjmb32x",
+                    "id": "28DROCResQvsdO6Hjmb32x",
+                    "images": [{
+                        "height": 634,
+                        "url": "https://i.scdn.co/image/933a03df5f87b17796b6fd192a6db02b428ebc00",
+                        "width": 640
+                    }, {
+                        "height": 297,
+                        "url": "https://i.scdn.co/image/74530cdf4855f48d530f45ca9db5df35310b478e",
+                        "width": 300
+                    }, {
+                        "height": 63,
+                        "url": "https://i.scdn.co/image/81d6349ac3d17bd8db921a860360ed1dd4c4e073",
+                        "width": 64
+                    }],
+                    "name": "What It Is To Burn",
+                    "type": "album",
+                    "uri": "spotify:album:28DROCResQvsdO6Hjmb32x"
+                },
+                "artists": [{
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/artist/528t5c0zyuG9beehtth4Za"
+                    },
+                    "href": "https://api.spotify.com/v1/artists/528t5c0zyuG9beehtth4Za",
+                    "id": "528t5c0zyuG9beehtth4Za",
+                    "name": "Finch",
+                    "type": "artist",
+                    "uri": "spotify:artist:528t5c0zyuG9beehtth4Za"
+                }],
+                "available_markets": ["CA", "MX", "US"],
+                "disc_number": 1,
+                "duration_ms": 269026,
+                "explicit": false,
+                "external_ids": {
+                    "isrc": "USMC10200944"
+                },
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/track/2DGFNAg4pTPLFKPeQRbGDZ"
+                },
+                "href": "https://api.spotify.com/v1/tracks/2DGFNAg4pTPLFKPeQRbGDZ",
+                "id": "2DGFNAg4pTPLFKPeQRbGDZ",
+                "name": "What It Is To Burn - New Version",
+                "popularity": 46,
+                "preview_url": "https://p.scdn.co/mp3-preview/a7099011b4a6f3cd46d1f400305a8406c91dfa60",
+                "track_number": 13,
+                "type": "track",
+                "uri": "spotify:track:2DGFNAg4pTPLFKPeQRbGDZ"
+            }
+        }, {
+            "added_at": "2016-11-21T15:53:41Z",
+            "added_by": {
+                "external_urls": {
+                    "spotify": "http://open.spotify.com/user/thomasxbanks"
+                },
+                "href": "https://api.spotify.com/v1/users/thomasxbanks",
+                "id": "thomasxbanks",
+                "type": "user",
+                "uri": "spotify:user:thomasxbanks"
+            },
+            "is_local": false,
+            "track": {
+                "album": {
+                    "album_type": "album",
+                    "artists": [{
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/2cyaobEho8uxhqLxwG7j6i"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/2cyaobEho8uxhqLxwG7j6i",
+                        "id": "2cyaobEho8uxhqLxwG7j6i",
+                        "name": "Head Automatica",
+                        "type": "artist",
+                        "uri": "spotify:artist:2cyaobEho8uxhqLxwG7j6i"
+                    }],
+                    "available_markets": ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY"],
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/album/4PQJiFSYykABCgha6bU4O6"
+                    },
+                    "href": "https://api.spotify.com/v1/albums/4PQJiFSYykABCgha6bU4O6",
+                    "id": "4PQJiFSYykABCgha6bU4O6",
+                    "images": [{
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/7d4989899a83015ffe2f6b1fed27d3e2581a7f26",
+                        "width": 640
+                    }, {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/00a2a942c9cf3e86da47e12f5822ecbc8fee6f5d",
+                        "width": 300
+                    }, {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/198818fc9992753e4ec8def7be4ce38b94718a5b",
+                        "width": 64
+                    }],
+                    "name": "Decadence",
+                    "type": "album",
+                    "uri": "spotify:album:4PQJiFSYykABCgha6bU4O6"
+                },
+                "artists": [{
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/artist/2cyaobEho8uxhqLxwG7j6i"
+                    },
+                    "href": "https://api.spotify.com/v1/artists/2cyaobEho8uxhqLxwG7j6i",
+                    "id": "2cyaobEho8uxhqLxwG7j6i",
+                    "name": "Head Automatica",
+                    "type": "artist",
+                    "uri": "spotify:artist:2cyaobEho8uxhqLxwG7j6i"
+                }],
+                "available_markets": ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY"],
+                "disc_number": 1,
+                "duration_ms": 203733,
+                "explicit": false,
+                "external_ids": {
+                    "isrc": "USWB10402194"
+                },
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/track/24efdUt3KGbZ6wnBLp6j2n"
+                },
+                "href": "https://api.spotify.com/v1/tracks/24efdUt3KGbZ6wnBLp6j2n",
+                "id": "24efdUt3KGbZ6wnBLp6j2n",
+                "name": "Beating Heart Baby",
+                "popularity": 52,
+                "preview_url": "https://p.scdn.co/mp3-preview/eecb244137b63b09ca85d66d045e3ad27e92a5db",
+                "track_number": 3,
+                "type": "track",
+                "uri": "spotify:track:24efdUt3KGbZ6wnBLp6j2n"
+            }
+        }, {
+            "added_at": "2016-11-21T15:53:50Z",
+            "added_by": {
+                "external_urls": {
+                    "spotify": "http://open.spotify.com/user/thomasxbanks"
+                },
+                "href": "https://api.spotify.com/v1/users/thomasxbanks",
+                "id": "thomasxbanks",
+                "type": "user",
+                "uri": "spotify:user:thomasxbanks"
+            },
+            "is_local": false,
+            "track": {
+                "album": {
+                    "album_type": "album",
+                    "artists": [{
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/19I4tYiChJoxEO5EuviXpz"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/19I4tYiChJoxEO5EuviXpz",
+                        "id": "19I4tYiChJoxEO5EuviXpz",
+                        "name": "AFI",
+                        "type": "artist",
+                        "uri": "spotify:artist:19I4tYiChJoxEO5EuviXpz"
+                    }],
+                    "available_markets": ["CA", "MX", "US"],
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/album/1eIzVBHA5NvX0wo2nLACew"
+                    },
+                    "href": "https://api.spotify.com/v1/albums/1eIzVBHA5NvX0wo2nLACew",
+                    "id": "1eIzVBHA5NvX0wo2nLACew",
+                    "images": [{
+                        "height": 635,
+                        "url": "https://i.scdn.co/image/ecba6a0e0346aa81003111638fe8eea18ee96296",
+                        "width": 639
+                    }, {
+                        "height": 298,
+                        "url": "https://i.scdn.co/image/b6b64837f46a328365d04dc99fb4d891e77ebcca",
+                        "width": 300
+                    }, {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/d057b12149820908444cb07dd16ad231ee094b95",
+                        "width": 64
+                    }],
+                    "name": "Sing The Sorrow",
+                    "type": "album",
+                    "uri": "spotify:album:1eIzVBHA5NvX0wo2nLACew"
+                },
+                "artists": [{
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/artist/19I4tYiChJoxEO5EuviXpz"
+                    },
+                    "href": "https://api.spotify.com/v1/artists/19I4tYiChJoxEO5EuviXpz",
+                    "id": "19I4tYiChJoxEO5EuviXpz",
+                    "name": "AFI",
+                    "type": "artist",
+                    "uri": "spotify:artist:19I4tYiChJoxEO5EuviXpz"
+                }],
+                "available_markets": ["CA", "MX", "US"],
+                "disc_number": 1,
+                "duration_ms": 190493,
+                "explicit": false,
+                "external_ids": {
+                    "isrc": "USDW10300037"
+                },
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/track/3fttmSWGThBQTNkuHMoCTN"
+                },
+                "href": "https://api.spotify.com/v1/tracks/3fttmSWGThBQTNkuHMoCTN",
+                "id": "3fttmSWGThBQTNkuHMoCTN",
+                "name": "Girl's Not Grey",
+                "popularity": 52,
+                "preview_url": "https://p.scdn.co/mp3-preview/2b6dd1c6db1f4bbd57dab90aa2e61b1e68ec9310",
+                "track_number": 6,
+                "type": "track",
+                "uri": "spotify:track:3fttmSWGThBQTNkuHMoCTN"
+            }
+        }, {
+            "added_at": "2016-11-21T15:50:57Z",
+            "added_by": {
+                "external_urls": {
+                    "spotify": "http://open.spotify.com/user/thomasxbanks"
+                },
+                "href": "https://api.spotify.com/v1/users/thomasxbanks",
+                "id": "thomasxbanks",
+                "type": "user",
+                "uri": "spotify:user:thomasxbanks"
+            },
+            "is_local": false,
+            "track": {
+                "album": {
+                    "album_type": "album",
+                    "artists": [{
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/168dgYui7ExaU612eooDF1"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/168dgYui7ExaU612eooDF1",
+                        "id": "168dgYui7ExaU612eooDF1",
+                        "name": "Brand New",
+                        "type": "artist",
+                        "uri": "spotify:artist:168dgYui7ExaU612eooDF1"
+                    }],
+                    "available_markets": ["AU", "GB", "IE", "NZ"],
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/album/2r0pP3sWs8xhaai1fnkBtd"
+                    },
+                    "href": "https://api.spotify.com/v1/albums/2r0pP3sWs8xhaai1fnkBtd",
+                    "id": "2r0pP3sWs8xhaai1fnkBtd",
+                    "images": [{
+                        "height": 575,
+                        "url": "https://i.scdn.co/image/3321c2c2a15cb3e37a13576941adf20d801dc3e0",
+                        "width": 640
+                    }, {
+                        "height": 270,
+                        "url": "https://i.scdn.co/image/14f85bb55c324e800e18b4320073be540e3968fb",
+                        "width": 300
+                    }, {
+                        "height": 58,
+                        "url": "https://i.scdn.co/image/03f33e992809cbe09f9f10683f575194f061cacc",
+                        "width": 64
+                    }],
+                    "name": "The Devil And God Are Raging Inside Me (UK Version)",
+                    "type": "album",
+                    "uri": "spotify:album:2r0pP3sWs8xhaai1fnkBtd"
+                },
+                "artists": [{
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/artist/168dgYui7ExaU612eooDF1"
+                    },
+                    "href": "https://api.spotify.com/v1/artists/168dgYui7ExaU612eooDF1",
+                    "id": "168dgYui7ExaU612eooDF1",
+                    "name": "Brand New",
+                    "type": "artist",
+                    "uri": "spotify:artist:168dgYui7ExaU612eooDF1"
+                }],
+                "available_markets": ["AU", "GB", "IE", "NZ"],
+                "disc_number": 1,
+                "duration_ms": 250893,
+                "explicit": false,
+                "external_ids": {
+                    "isrc": "USUM70614458"
+                },
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/track/0ivtJlACvWRlhTEd9YlXlk"
+                },
+                "href": "https://api.spotify.com/v1/tracks/0ivtJlACvWRlhTEd9YlXlk",
+                "id": "0ivtJlACvWRlhTEd9YlXlk",
+                "name": "Handcuffs",
+                "popularity": 31,
+                "preview_url": "https://p.scdn.co/mp3-preview/c67759b6b8454cb45d74ef7cf11024e4e954b68f",
+                "track_number": 12,
+                "type": "track",
+                "uri": "spotify:track:0ivtJlACvWRlhTEd9YlXlk"
+            }
+        }],
+        "limit": 100,
+        "next": null,
+        "offset": 0,
+        "previous": null,
+        "total": 10
+    },
+    "type": "playlist",
+    "uri": "spotify:user:thomasxbanks:playlist:12euo5zUOLXaNvfrfvmHsl"
+}
