@@ -3,8 +3,8 @@
 $(document).ready(function() {
     // Define your variables
     const user_id = 'thomasxbanks'
-    const playlist_id = '12euo5zUOLXaNvfrfvmHsl'
-    const access_token = 'BQD7nydYUdzFAPcswePV0oB5gua6qD6lz0V3wP8FLMS-MwlqatcwMWoj3UyZEh-wppeR8V3nI6cJsfZsN95pKphsJcXhtWjBkxt6WBgKpaW0xRGKoPudjlStq-FfEZpn6BdklQLlBJFjwWojtnjBvXI69G7Gov5h8A'
+    const playlist_id = '3IN3DqhHCTZKQE2V5QdHiB'
+    const access_token = 'BQBlkgQ9kxHpK77l9Q6UzDYaaS_TSZqg7hRKKLGOYSQyS6PS0ODrxlw7Z4lX197pMLLl7lcpa3Z7vcLfIfOzoORzVARanJe2q3imJeTbSKLQhAtJzkOrSuQs7pGZAtQw_5HPnXzWn4hYZPAMi5F3rQxA-d6mO8uS0Q'
 
     // Get publicly available user information
     $.get('https://api.spotify.com/v1/users/' + user_id, function(data) {
@@ -43,6 +43,10 @@ $(document).ready(function() {
         // Log for debug
         console.log('authed:',data)
 
+        // Uncomment the below to spit out the JSON in a tasty grabbable chuck of text :)
+        //let prettyPrintedJSON = JSON.stringify(data, null, 2)
+        //$('body').append("<pre>"+prettyPrintedJSON+"</pre>")
+        
         let playlist = {
             title: data.name,
             description: data.description,
@@ -64,8 +68,8 @@ $(document).ready(function() {
                 tracksArray.push(trackObj)
             })
             // Log for debug
-            //console.info(dataTracks)
-            //console.log(tracksArray)
+            // console.info(dataTracks)
+            // console.log(tracksArray)
 
         // Display the playlist header
         let playlister = Mustache.render("<div class='playlist_wrapper' style='background-image: url({{image}})'><div><h1>{{title}}</h1></div><div><p>{{description}}</p></div></div>", playlist)
@@ -82,7 +86,6 @@ $(document).ready(function() {
                 $('.playlister_wrapper').append(tracklist)
             })
         })
-
     })
 
     let progressIndication
