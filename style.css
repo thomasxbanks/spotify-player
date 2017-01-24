@@ -1,59 +1,31 @@
+@import url("//fonts.googleapis.com/css?family=Arsenal");
+html { font-size: 16px; }
+
 html * { box-sizing: border-box; }
 
-body { background: #eeefef; margin: 0; padding: 0; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 14px; color: #666; }
+body { background: #eaeaee; margin: 0; padding: 0; font-family: "Arsenal", Arial, Helvetica, sans-serif; font-size: 16px; color: #4a4a4e; }
 
-main { display: block; width: 100%; padding: 10px; }
+.grid { display: block; max-width: 1440px; padding: 8px; margin: 0 auto; }
 
 /*Header Contents*/
-header { padding: 20px; }
-
-/*Footer Contents*/
-footer { padding: 20px; }
-
-footer cite { display: inline-block; padding: 0 30px; height: 60px; line-height: 60px; font-style: normal; background: #fff; border: 2px solid #1ed760; border-radius: 30px; }
-
-footer cite img { display: inline-block; border-radius: 50%; width: 30px; height: 30px; margin: 15px 15px 15px 0; vertical-align: middle; }
-
-footer cite a { color: #1ED760; text-decoration: none; text-transform: uppercase; }
-
 /*Playlist Wrapper*/
-.playlister_wrapper { display: inline-block; vertical-align: top; font-size: 0; text-align: center; }
+.playlister_wrapper { display: block; vertical-align: top; font-size: 0; }
 
-.card-post { display: inline-block; vertical-align: top; max-width: 300px; font-size: 0; margin: 20px 10px; padding: 10px; background: #fefefe; position: relative; box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); text-align: left; }
+.card-post { display: inline-block; vertical-align: top; max-width: 300px; font-size: 0; margin: 16px 8px; padding: 0; background: #fafafe; position: relative; box-shadow: 0 0 8px rgba(42, 42, 46, 0.2); text-align: left; }
+
+.card-post header { position: relative; z-index: 1; }
+
+.card-post h2 { position: absolute; bottom: 0; z-index: 10; background: rgba(42, 42, 46, 0.32); font-size: 2rem; line-height: 1; padding: 16px; margin: 0; width: 100%; color: #fafafe; }
 
 .card-post cite, .card-post img { display: block; }
 
-.card-post img { padding: 0; margin: 0; vertical-align: top; width: 100%; height: 300px; object-fit: cover; }
+.card-post img { position: relative; padding: 0; margin: 0; vertical-align: top; width: 100%; height: 300px; object-fit: cover; z-index: 2; }
 
-.card-post cite { font-size: 14px; padding: 5px; width: 100%; font-style: normal; }
-
-.card-post audio { position: absolute; left: -50000px; }
-
-.card-post .audio-controls { display: block; font-size: 20px; }
-
-.card-post .audio-controls progress { -webkit-appearance: none; appearance: none; width: 100%; height: 5px; transition: ease-in 100ms; }
-
-.card-post progress[value]::-webkit-progress-bar { background: #e8e8e8; box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2); }
-
-.card-post progress[value]::-webkit-progress-value { background: linear-gradient(to left, #a00, #f00); }
-
-.card-track cite, .card-track img { display: block; }
-
-.card-track header { background: #080810; min-height: 337px; }
-
-.card-track header:hover img { opacity: 1 !important; }
-
-.card-track img { padding: 0; margin: 0; vertical-align: top; width: 100%; min-height: 100%; height: auto; object-fit: cover; opacity: 0.8 !important; }
-
-.card-track .inner .content { padding: 0; }
-
-.card-track cite { line-height: 1.5; font-style: normal; padding: 16px; }
-
-@media screen and (min-width: 731px) { .card-track cite { min-height: 130px; } }
+.card-post cite { font-size: 16px; padding: 8px 16px; width: 100%; font-style: normal; }
 
 .card-track audio { position: absolute; left: -50000px; }
 
-.card-track .audio-controls { display: block; background: #ab2328; text-align: center; }
+.card-track .audio-controls { display: block; background: #4a4a4e; text-align: center; }
 
 .card-track .audio-controls button { margin: 0 auto; background: none; }
 
@@ -61,15 +33,18 @@ footer cite a { color: #1ED760; text-decoration: none; text-transform: uppercase
 
 .card-track .audio-controls progress { -webkit-appearance: none; appearance: none; width: 100%; height: 16px; transition: ease-in 50ms; position: relative; }
 
-.card-track .audio-controls progress:after { /*content: attr(value); position: absolute; top: 0; left: 16px; font-size: 10px; line-height: 16px; color: white;*/ }
+.card-track .audio-controls progress:after { content: attr(value); position: absolute; top: 0; left: 16px; font-size: 8px; line-height: 16px; color: white; }
 
-.card-track progress[value]::-webkit-progress-bar { background: white; }
+.card-track progress[value]::-webkit-progress-bar { background: #fafafe; }
 
-.card-track progress[value]::-webkit-progress-value { background: #ab2328; }
+.card-track progress[value]::-webkit-progress-value { background: #4a4a4e; }
 
 /*------------------------------------*  #BUTTON--NORMALISE
 \*------------------------------------*/
-/* Buttons are to be used when the result of the interaction occurs on the same page. Buttons should not be used for page links or submitting a form _to a different page_ */
+/*
+  Buttons are to be used when the result of the interaction occurs on the same page.
+  Buttons should not be used for page links or submitting a form _to a different page_
+*/
 button { -webkit-appearance: none; -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: rgba(255, 255, 255, 0); -webkit-tap-highlight-color: transparent; border: none; }
 
 button::-moz-focus-inner, input::-moz-focus-inner, select::-moz-focus-inner, textarea::-moz-focus-inner { border: 0; }
@@ -84,9 +59,7 @@ button:focus, input:focus, select:focus, textarea:focus { outline: 0; }
 
 .audio-controls button[data-state="pause"]:after { content: "\f04c"; }
 
-.audio-controls button:hover { background-color: #c40000; }
-
-.filter-bar { display: block; width: 100%; }
+.audio-controls button:hover { color: white; }
 
 .drop-down-toggle { position: relative; text-align: left; padding: 5px 38px 5px 8px; margin: 8px 16px 8px 0; line-height: 20px; min-width: 200px; }
 

@@ -52,6 +52,6 @@ textarea:focus {
   }
 
   &:hover {
-    background-color: lighten(#a00, 5%);
+    color: lighten($clr_white, 5%);
   }
 }

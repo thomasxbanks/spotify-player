@@ -3,12 +3,29 @@
     vertical-align: top;
     max-width: 300px;
     font-size: 0;
-    margin: 20px 10px;
-    padding: 10px;
-    background: #fefefe;
+    margin: $b ($b / 2);
+    padding: 0;
+    background: $clr_white;
     position: relative;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 8px rgba($clr_black, 0.2);
     text-align: left;
+
+    header {
+      position: relative;
+      z-index: 1;
+    }
+    h2 {
+      position: absolute;
+      bottom: 0;
+      z-index: 10;
+      background: rgba($clr_black, 0.32);
+      font-size: 2rem;
+      line-height: 1;
+      padding: $b;
+      margin: 0;
+      width: 100%;
+      color: $clr_white;
+    }
 
     cite,
     img {
@@ -16,89 +33,23 @@
     }
 
     img {
+        position: relative;
         padding: 0;
         margin: 0;
         vertical-align: top;
         width: 100%;
         height: 300px;
         object-fit: cover;
+        z-index: 2;
     }
 
     cite {
-        font-size: 14px;
-        padding: 5px;
+        font-size: $b;
+        padding: ($b / 2) $b;
         width: 100%;
         font-style: normal;
     }
 
-    audio {
-        position: absolute;
-        left: -50000px;
-    }
-
-    .audio-controls {
-        display: block;
-        font-size: 20px;
-    }
-
-    .audio-controls progress {
-        -webkit-appearance: none;
-        appearance: none;
-        width: 100%;
-        height: 5px;
-        transition: ease-in 100ms;
-    }
-
-    progress[value]::-webkit-progress-bar {
-        background: #e8e8e8;
-        box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
-    }
-
-    progress[value]::-webkit-progress-value {
-        background: linear-gradient(to left, #a00, #f00);
-    }
-}
-
-
-.card-track cite,
-.card-track img {
-  display: block;
-}
-
-.card-track header {
-  background: #080810;
-  min-height: 337px;
-}
-
-.card-track header:hover img {
-  opacity: 1 !important;
-}
-
-.card-track img {
-  padding: 0;
-  margin: 0;
-  vertical-align: top;
-  width: 100%;
-  min-height: 100%;
-  height: auto;
-  object-fit: cover;
-  opacity: 0.8 !important;
-}
-
-.card-track .inner .content {
-  padding: 0;
-}
-
-.card-track cite {
-  line-height: 1.5;
-  font-style: normal;
-  padding: 16px;
-}
-
-@media screen and (min-width: 731px) {
-  .card-track cite {
-    min-height: 130px;
-  }
 }
 
 .card-track audio {
@@ -108,7 +59,7 @@
 
 .card-track .audio-controls {
   display: block;
-  background: #ab2328;
+  background: $clr_grey-dk;
   text-align: center;
 }
 
@@ -125,24 +76,25 @@
   -webkit-appearance: none;
   appearance: none;
   width: 100%;
-  height: 16px;
+  height: $b;
   transition: ease-in 50ms;
   position: relative;
 }
+
 .card-track .audio-controls progress:after {
-  /*content: attr(value);
+  content: attr(value);
   position: absolute;
   top: 0;
-  left: 16px;
-  font-size: 10px;
-  line-height: 16px;
-  color: white;*/
+  left: $b;
+  font-size: ($b / 2);
+  line-height: $b;
+  color: white;
 }
 
 .card-track progress[value]::-webkit-progress-bar {
-  background: white;
+  background: $clr_white;
 }
 
 .card-track progress[value]::-webkit-progress-value {
-  background: #ab2328;
+  background: $clr_grey-dk;
 }

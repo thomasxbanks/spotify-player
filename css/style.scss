@@ -1,5 +1,11 @@
+@import 'variables';
 @import 'shared';
 @import 'playlist_wrapper';
 @import 'track';
 @import 'button';
 @import 'nav';
+
+* {
+  // Redline
+  //box-shadow: inset -1px -1px 0 rgba(255, 0, 0, 0.2), inset 1px 1px 0 rgba(255, 0, 0, 0.2);
+}
