@@ -56,9 +56,9 @@ $(document).ready(function() {
                 tracksArray.map(function(item) {
                     console.log(item)
                     if (item['artist'].charAt(0) == sort) {
-                        var trackLayout = '<article class="card-post card-track"><div class="inner"><header><img src="' + item.art + '" /><h2>' + item.artist + '</h2></header><div class="content"><cite><strong>Album: </strong>' + item.album + '<br/><strong>Track: </strong>' + item.name + '</cite><div class="audio-controls"><progress max="30" value="0"></progress><br /><button data-state="play"><i class="icon-play"></i></button></div><audio controls><source src="' + item.url + '" type="audio/mpeg">Your browser does not support the audio element.</audio></div></div></article>'
-                        $('.playlister_wrapper').append(trackLayout)
-
+                        // var trackLayout = '<article class="card-post card-track"><div class="inner"><header><img src="' + item.art + '" /><h2>' + item.artist + '</h2></header><div class="content"><cite><strong>Album: </strong>' + item.album + '<br/><strong>Track: </strong>' + item.name + '</cite><div class="audio-controls"><progress max="30" value="0"></progress><br /><button data-state="play"><i class="icon-play"></i></button></div><audio controls><source src="' + item.url + '" type="audio/mpeg">Your browser does not support the audio element.</audio></div></div></article>'
+                        // $('.playlister_wrapper').append(trackLayout)
+                        DisplayTrack(item)
                     }
                 })
             }
