@@ -19,23 +19,53 @@ footer cite a { color: #1ED760; text-decoration: none; text-transform: uppercase
 /*Playlist Wrapper*/
 .playlister_wrapper { display: inline-block; vertical-align: top; font-size: 0; text-align: center; }
 
-.track_wrapper { display: inline-block; vertical-align: top; max-width: 300px; font-size: 0; margin: 20px 10px; padding: 10px; background: #fefefe; position: relative; box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); text-align: left; }
+.card-post { display: inline-block; vertical-align: top; max-width: 300px; font-size: 0; margin: 20px 10px; padding: 10px; background: #fefefe; position: relative; box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); text-align: left; }
 
-.track_wrapper cite, .track_wrapper img { display: block; }
+.card-post cite, .card-post img { display: block; }
 
-.track_wrapper img { padding: 0; margin: 0; vertical-align: top; width: 100%; height: 300px; object-fit: cover; }
+.card-post img { padding: 0; margin: 0; vertical-align: top; width: 100%; height: 300px; object-fit: cover; }
 
-.track_wrapper cite { font-size: 14px; padding: 5px; width: 100%; font-style: normal; }
+.card-post cite { font-size: 14px; padding: 5px; width: 100%; font-style: normal; }
 
-.track_wrapper audio { position: absolute; left: -50000px; }
+.card-post audio { position: absolute; left: -50000px; }
 
-.track_wrapper .audio-controls { display: block; font-size: 20px; }
+.card-post .audio-controls { display: block; font-size: 20px; }
 
-.track_wrapper .audio-controls progress { -webkit-appearance: none; appearance: none; width: 100%; height: 5px; transition: ease-in 100ms; }
+.card-post .audio-controls progress { -webkit-appearance: none; appearance: none; width: 100%; height: 5px; transition: ease-in 100ms; }
 
-.track_wrapper progress[value]::-webkit-progress-bar { background: #e8e8e8; box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2); }
+.card-post progress[value]::-webkit-progress-bar { background: #e8e8e8; box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2); }
 
-.track_wrapper progress[value]::-webkit-progress-value { background: linear-gradient(to left, #a00, #f00); }
+.card-post progress[value]::-webkit-progress-value { background: linear-gradient(to left, #a00, #f00); }
+
+.card-track cite, .card-track img { display: block; }
+
+.card-track header { background: #080810; min-height: 337px; }
+
+.card-track header:hover img { opacity: 1 !important; }
+
+.card-track img { padding: 0; margin: 0; vertical-align: top; width: 100%; min-height: 100%; height: auto; object-fit: cover; opacity: 0.8 !important; }
+
+.card-track .inner .content { padding: 0; }
+
+.card-track cite { line-height: 1.5; font-style: normal; padding: 16px; }
+
+@media screen and (min-width: 731px) { .card-track cite { min-height: 130px; } }
+
+.card-track audio { position: absolute; left: -50000px; }
+
+.card-track .audio-controls { display: block; background: #ab2328; text-align: center; }
+
+.card-track .audio-controls button { margin: 0 auto; background: none; }
+
+.card-track .audio-controls button i:before { border-color: transparent; }
+
+.card-track .audio-controls progress { -webkit-appearance: none; appearance: none; width: 100%; height: 16px; transition: ease-in 50ms; position: relative; }
+
+.card-track .audio-controls progress:after { /*content: attr(value); position: absolute; top: 0; left: 16px; font-size: 10px; line-height: 16px; color: white;*/ }
+
+.card-track progress[value]::-webkit-progress-bar { background: white; }
+
+.card-track progress[value]::-webkit-progress-value { background: #ab2328; }
 
 /*------------------------------------*  #BUTTON--NORMALISE
 \*------------------------------------*/
@@ -55,3 +85,39 @@ button:focus, input:focus, select:focus, textarea:focus { outline: 0; }
 .audio-controls button[data-state="pause"]:after { content: "\f04c"; }
 
 .audio-controls button:hover { background-color: #c40000; }
+
+.filter-bar { display: block; width: 100%; }
+
+.drop-down-toggle { position: relative; text-align: left; padding: 5px 38px 5px 8px; margin: 8px 16px 8px 0; line-height: 20px; min-width: 200px; }
+
+.drop-down-toggle.is-active:after { border-left: 8px solid transparent; border-right: 8px solid transparent; border-bottom: 8px solid #eaeaee; border-top: none; }
+
+.drop-down-toggle:after, .drop-down-toggle:before { position: absolute; }
+
+.drop-down-toggle:before { content: ""; display: block; background: #a00; top: 0; bottom: 0; right: 0; z-index: 20; width: 30px; }
+
+.drop-down-toggle:after { content: ""; display: block; width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 8px solid #fafafe; border-bottom: none; top: calc(50% - 4px); right: 7px; z-index: 25; }
+
+ul.drop-down { display: block; min-width: 200px; height: 300px; overflow-y: auto; position: absolute; top: auto; left: -50000px; z-index: 1000; list-style-type: none; padding: 8px; margin: 26px 0 0 0; background: #fafafe; box-shadow: 0 3px 3px rgba(42, 42, 46, 0.06); }
+
+ul.drop-down:before { content: ""; width: 0; height: 0; border-left: 16px solid transparent; border-right: 16px solid transparent; border-bottom: 16px solid #fafafe; position: absolute; top: -16px; left: 16px; }
+
+ul.drop-down.is-active { left: auto; }
+
+ul.drop-down li { display: block; }
+
+ul.drop-down li:hover { cursor: pointer; }
+
+ul.drop-down li:hover a { color: #4a4a4e; }
+
+ul.drop-down li:hover a:after { width: 60px; }
+
+ul.drop-down li a { color: #8a8a8e; text-align: left; text-decoration: none; display: block; padding: 16px; position: relative; }
+
+ul.drop-down li a.is-active { color: #4a4a4e; }
+
+ul.drop-down li a.is-active:after { width: 60px; }
+
+ul.drop-down li a:after { content: ""; display: block; background: #a00; height: 1px; width: 0; }
+
+ul.drop-down li a span { float: right; }

@@ -1,28 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Spotify Playlister</title>
-  <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0'>
-  <link rel="stylesheet" href="style.css">
-  <style>
 
-  </style>
+<head>
+    <meta charset="UTF-8">
+    <title>Spotify Playlister</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0'>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
 </head>
+
 <body>
-  <header>
-    <h1>
+    <header>
+        <h1>
       Spotify Playlister
     </h1>
-  </header>
-  <main>
-    <section class='playlister_wrapper'></section>
-  </main>
-  <footer>
-  </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://use.fontawesome.com/804ff9ee50.js"></script>
-  <script src="js/mustache.min.js"></script>
-  <script src="js/index.js"></script>
+    </header>
+    <main>
+        <nav id="filter-artists" class="filter-bar">
+            <div class="grid">
+                <div class="full">
+                    <button class="drop-down-toggle" type="button" name="button">Artist by Alphabet</button>
+                    <ul class="filter-az drop-down">
+                        <li><a>A</a></li>
+                        <li><a>B</a></li>
+                        <li><a>C</a></li>
+                        <li><a>D</a></li>
+                        <li><a>E</a></li>
+                        <li><a>F</a></li>
+                        <li><a>G</a></li>
+                        <li><a>H</a></li>
+                        <li><a>I</a></li>
+                        <li><a>J</a></li>
+                        <li><a>K</a></li>
+                        <li><a>L</a></li>
+                        <li><a>M</a></li>
+                        <li><a>N</a></li>
+                        <li><a>O</a></li>
+                        <li><a>P</a></li>
+                        <li><a>Q</a></li>
+                        <li><a>R</a></li>
+                        <li><a>S</a></li>
+                        <li><a>T</a></li>
+                        <li><a>U</a></li>
+                        <li><a>V</a></li>
+                        <li><a>W</a></li>
+                        <li><a>X</a></li>
+                        <li><a>Y</a></li>
+                        <li><a>Z</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class='playlister_wrapper'></section>
+    </main>
+    <footer>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/804ff9ee50.js"></script>
+    <script src="js/mustache.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
+
 </html>

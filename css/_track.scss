@@ -1,4 +1,4 @@
-.track_wrapper {
+.card-post {
     display: inline-block;
     vertical-align: top;
     max-width: 300px;
@@ -57,4 +57,92 @@
     progress[value]::-webkit-progress-value {
         background: linear-gradient(to left, #a00, #f00);
     }
+}
+
+
+.card-track cite,
+.card-track img {
+  display: block;
+}
+
+.card-track header {
+  background: #080810;
+  min-height: 337px;
+}
+
+.card-track header:hover img {
+  opacity: 1 !important;
+}
+
+.card-track img {
+  padding: 0;
+  margin: 0;
+  vertical-align: top;
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  object-fit: cover;
+  opacity: 0.8 !important;
+}
+
+.card-track .inner .content {
+  padding: 0;
+}
+
+.card-track cite {
+  line-height: 1.5;
+  font-style: normal;
+  padding: 16px;
+}
+
+@media screen and (min-width: 731px) {
+  .card-track cite {
+    min-height: 130px;
+  }
+}
+
+.card-track audio {
+  position: absolute;
+  left: -50000px;
+}
+
+.card-track .audio-controls {
+  display: block;
+  background: #ab2328;
+  text-align: center;
+}
+
+.card-track .audio-controls button {
+  margin: 0 auto;
+  background: none;
+}
+
+.card-track .audio-controls button i:before {
+  border-color: rgba(0,0,0,0);
+}
+
+.card-track .audio-controls progress {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 16px;
+  transition: ease-in 50ms;
+  position: relative;
+}
+.card-track .audio-controls progress:after {
+  /*content: attr(value);
+  position: absolute;
+  top: 0;
+  left: 16px;
+  font-size: 10px;
+  line-height: 16px;
+  color: white;*/
+}
+
+.card-track progress[value]::-webkit-progress-bar {
+  background: white;
+}
+
+.card-track progress[value]::-webkit-progress-value {
+  background: #ab2328;
 }
