@@ -81,14 +81,26 @@
   position: relative;
 }
 
-.card-track .audio-controls progress:after {
-  content: attr(value);
+.card-track .audio-controls progress:before {
+  content: attr(data-progress);
   position: absolute;
   top: 0;
   left: $b;
-  font-size: ($b / 2);
+  font-size: ($b / 1.5);
   line-height: $b;
-  color: white;
+  color: $clr_grey-dk;
+  font-family: monospace;
+}
+
+.card-track .audio-controls progress:after {
+  content: attr(data-remaining);
+  position: absolute;
+  top: 0;
+  right: $b;
+  font-size: ($b / 1.5);
+  line-height: $b;
+  color: $clr_grey-dk;
+  font-family: monospace;
 }
 
 .card-track progress[value]::-webkit-progress-bar {
@@ -96,5 +108,5 @@
 }
 
 .card-track progress[value]::-webkit-progress-value {
-  background: $clr_grey-dk;
+  background: rgba($clr_grey-dk, 0.32);
 }
