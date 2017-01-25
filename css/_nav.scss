@@ -1,8 +1,9 @@
 .drop-down-toggle {
-    margin: 0 ($b / 2);
     min-width: 200px;
     line-height: 2rem;
     cursor: pointer;
+    background: $clr_white;
+
     i {
       float: left;
       vertical-align: middle;
@@ -21,10 +22,8 @@ ul.drop-down {
     z-index: 1000;
     list-style-type: none;
     padding: ($b / 2);
-    margin: 0 ($b / 2);
-    background: #fafafe;
-    box-shadow: 0 3px 3px rgba($clr_black, 0.32);
-
+    margin: 0;
+    background: $clr_white;
     &.is-active {
         left: auto;
     }

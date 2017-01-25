@@ -6,23 +6,23 @@ html * { box-sizing: border-box; }
 
 body { background: #eaeaee; margin: 0; padding: 0; font-family: "Inconsolata", Arial, Helvetica, sans-serif; font-size: 16px; color: #4a4a4e; }
 
-body > header h1 { margin: 16px 8px; }
-
 .grid { display: block; max-width: 1440px; padding: 8px; margin: 0 auto; }
+
+.grid_inner { padding: 0 8px; }
 
 /*Header Contents*/
 /*Playlist Wrapper*/
-.playlister_wrapper { display: block; vertical-align: top; font-size: 0; -webkit-column-width: 300px; -moz-column-width: 300px; column-width: 300px; -webkit-column-gap: 32px; -moz-column-gap: 32px; column-gap: 32px; }
+.playlister_wrapper { display: block; vertical-align: top; font-size: 0; }
 
-.card-post { display: inline-block; vertical-align: top; max-width: 300px; font-size: 0; margin: 16px 8px; padding: 0; background: #fafafe; position: relative; box-shadow: 0 0 8px rgba(42, 42, 46, 0.2); text-align: left; }
+.card-post { display: inline-block; vertical-align: top; max-width: 320px; font-size: 0; margin: 16px 8px; padding: 0; background: #fafafe; position: relative; box-shadow: 0 0 8px rgba(42, 42, 46, 0.2); text-align: left; }
 
-.card-post header { position: relative; z-index: 1; }
+.card-post header { position: relative; z-index: 1; height: 320px; }
 
-.card-post h2 { position: absolute; bottom: 0; z-index: 10; background: rgba(42, 42, 46, 0.32); font-size: 2rem; line-height: 1; padding: 16px; margin: 0; width: 100%; color: #fafafe; }
+.card-post h2 { position: absolute; bottom: 0; z-index: 10; background: rgba(42, 42, 46, 0.32); font-size: 1.5rem; line-height: 1; padding: 16px; margin: 0; width: 100%; color: #fafafe; }
 
 .card-post cite, .card-post img { display: block; }
 
-.card-post img { position: relative; padding: 0; margin: 0; vertical-align: top; width: 100%; height: 300px; object-fit: cover; z-index: 2; }
+.card-post img { position: relative; padding: 0; margin: 0; vertical-align: top; width: 100%; height: 100%; object-fit: cover; z-index: 2; }
 
 .card-post cite { font-size: 16px; padding: 8px 16px; width: 100%; font-style: normal; }
 
@@ -46,7 +46,10 @@ body > header h1 { margin: 16px 8px; }
 
 /*------------------------------------*  #BUTTON--NORMALISE
 \*------------------------------------*/
-/* Buttons are to be used when the result of the interaction occurs on the same page. Buttons should not be used for page links or submitting a form _to a different page_ */
+/*
+  Buttons are to be used when the result of the interaction occurs on the same page.
+  Buttons should not be used for page links or submitting a form _to a different page_
+*/
 button { -webkit-appearance: none; -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: rgba(255, 255, 255, 0); -webkit-tap-highlight-color: transparent; border: none; font-family: "Inconsolata", Arial, Helvetica, sans-serif; }
 
 button::-moz-focus-inner, input::-moz-focus-inner, select::-moz-focus-inner, textarea::-moz-focus-inner { border: 0; }
@@ -57,11 +60,11 @@ button:focus, input:focus, select:focus, textarea:focus { outline: 0; }
 
 .audio-controls button:hover { color: white; }
 
-.drop-down-toggle { margin: 0 8px; min-width: 200px; line-height: 2rem; cursor: pointer; }
+.drop-down-toggle { min-width: 200px; line-height: 2rem; cursor: pointer; background: #fafafe; }
 
 .drop-down-toggle i { float: left; vertical-align: middle; line-height: 2rem; }
 
-ul.drop-down { display: block; min-width: 200px; height: 300px; overflow-y: auto; position: absolute; top: auto; left: -50000px; z-index: 1000; list-style-type: none; padding: 8px; margin: 0 8px; background: #fafafe; box-shadow: 0 3px 3px rgba(42, 42, 46, 0.32); }
+ul.drop-down { display: block; min-width: 200px; height: 300px; overflow-y: auto; position: absolute; top: auto; left: -50000px; z-index: 1000; list-style-type: none; padding: 8px; margin: 0; background: #fafafe; }
 
 ul.drop-down.is-active { left: auto; }
 

@@ -1,7 +1,9 @@
+$square: 320px;
+
 .card-post {
     display: inline-block;
     vertical-align: top;
-    max-width: 300px;
+    max-width: $square;
     font-size: 0;
     margin: $b ($b / 2);
     padding: 0;
@@ -13,13 +15,14 @@
     header {
       position: relative;
       z-index: 1;
+      height: $square;
     }
     h2 {
       position: absolute;
       bottom: 0;
       z-index: 10;
       background: rgba($clr_black, 0.32);
-      font-size: 2rem;
+      font-size: 1.5rem;
       line-height: 1;
       padding: $b;
       margin: 0;
@@ -38,7 +41,7 @@
         margin: 0;
         vertical-align: top;
         width: 100%;
-        height: 300px;
+        height: 100%;
         object-fit: cover;
         z-index: 2;
     }

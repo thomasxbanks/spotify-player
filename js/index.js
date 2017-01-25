@@ -142,13 +142,16 @@ $(document).ready(function() {
 // DROPDOWN
 $('.drop-down-toggle').on('click', function(e) {
     let dropdown = $(this)["0"].nextElementSibling
+    console.log(this)
     if ($(this).hasClass('is-active')) {
         $(this).removeClass('is-active')
         $(dropdown).removeClass('is-active')
+        $(this).find('.material-icons').html('filter_list')
     } else {
         $('.drop-down-toggle.is-active, .drop-down.is-active').toggleClass('is-active')
         $(this).addClass('is-active')
         $(dropdown).addClass('is-active')
+        $(this).find('.material-icons').html('close')
     }
 
 

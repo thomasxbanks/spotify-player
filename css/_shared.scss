@@ -14,15 +14,15 @@ body {
   color: $clr_grey-dk;
 }
 
-body > header h1 {
-  margin: $b ($b / 2);
-}
-
 .grid {
   display: block;
   max-width: 1440px;
   padding: ($b / 2);
   margin: 0 auto;
+}
+
+.grid_inner {
+  padding: 0 ($b / 2);
 }
 
 /*Header Contents*/
