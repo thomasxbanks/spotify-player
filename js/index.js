@@ -8,40 +8,40 @@ $(document).ready(function() {
             let tracksArray = []
 
             $.each(dataTracks, function(i, obj) {
-                    var t = dataTracks[i].track
-                    var trackObj = {
-                        artist: t.artists[0].name,
-                        album: t.album.name,
-                        name: t.name,
-                        art: t.album.images[0].url,
-                        url: t.preview_url,
-                        popularity: t.popularity
-                    }
-                    tracksArray.push(trackObj)
-                })
-                // log for debug
-                //console.log(tracksArray)
-                // Display each track
-            let DisplayTrack = (item) => {
-                    $.get('templates/track.html', function(templates) {
-                        // Fetch the <script /> block from the loaded external
-                        // template file which contains our track template.
-                        var template = $(templates).filter('#trackTemplate').html()
-                        let tracklist = Mustache.render(template, item)
-                        $('.playlister_wrapper').append(tracklist)
-                    })
+                var t = dataTracks[i].track
+                var trackObj = {
+                    artist: t.artists[0].name,
+                    album: t.album.name,
+                    name: t.name,
+                    art: t.album.images[0].url,
+                    url: t.preview_url,
+                    popularity: t.popularity
                 }
-                // $.get('templates/track.html', function(templates) {
-                //     // Fetch the <script /> block from the loaded external
-                //     // template file which contains our track template.
-                //     var template = $(templates).filter('#trackTemplate').html()
-                //     $.each(tracksArray, function(i, obj) {
-                //         let tracktemplate = ''
-                //         //let tracklist = Mustache.render(template, tracksArray[i])
-                //         let tracklist = Mustache.render(template, item)
-                //         $('.playlister_wrapper').append(tracklist)
-                //     })
-                // })
+                tracksArray.push(trackObj)
+            })
+            // log for debug
+            //console.log(tracksArray)
+            // Display each track
+            let DisplayTrack = (item) => {
+                $.get('templates/track.html', function(templates) {
+                    // Fetch the <script /> block from the loaded external
+                    // template file which contains our track template.
+                    var template = $(templates).filter('#trackTemplate').html()
+                    let tracklist = Mustache.render(template, item)
+                    $('.playlister_wrapper').append(tracklist)
+                })
+            }
+            // $.get('templates/track.html', function(templates) {
+            //     // Fetch the <script /> block from the loaded external
+            //     // template file which contains our track template.
+            //     var template = $(templates).filter('#trackTemplate').html()
+            //     $.each(tracksArray, function(i, obj) {
+            //         let tracktemplate = ''
+            //         //let tracklist = Mustache.render(template, tracksArray[i])
+            //         let tracklist = Mustache.render(template, item)
+            //         $('.playlister_wrapper').append(tracklist)
+            //     })
+            // })
 
 
             let MostPopular = (sort) => {
@@ -84,7 +84,7 @@ $(document).ready(function() {
         let i = $(currentPlayer.progress).attr('value')
         progressIndication = setInterval(function() {
             $(currentPlayer.progress).attr('value', currentPlayer.audio.currentTime)
-            $(currentPlayer.progress).attr('data-progress',~~(currentPlayer.audio.currentTime))
+            $(currentPlayer.progress).attr('data-progress', ~~(currentPlayer.audio.currentTime))
             $(currentPlayer.progress).attr('data-remaining', ~~(max - currentPlayer.audio.currentTime))
             if (currentPlayer.audio.currentTime >= max) {
                 stopProgress(progressIndication, currentPlayer)
@@ -102,19 +102,17 @@ $(document).ready(function() {
     }
 
     function toggleButtonState(currentPlayer, state) {
-        console.log('toggle', currentPlayer.button[0])
-        $(currentPlayer.button[0]).html(state)
+        console.log('toggle', state, currentPlayer)
+        $(currentPlayer.button[0]).html(state + '_circle_filled')
         $(currentPlayer.button[0]).attr('data-state', state)
     }
 
-    $('body').on('click', '.card-track .audio-controls button', function() {
+    $('.playlister_wrapper').on('click', '.audio-controls button', function(e) {
         let currentPlayer = {
-                button: $(this),
-                audio: $(this).parent().parent().find('audio')[0],
-                progress: $(this).parent().find('progress')[0]
-            }
-            // @TODO: remove after testing
-
+            button: $(e.currentTarget),
+            audio: $(e.currentTarget).parent().parent().find('audio')[0],
+            progress: $(e.currentTarget).parent().find('progress')[0]
+        }
         currentPlayer.audio.volume = 1
         if (currentPlayer.audio.paused == false) {
             // If the track is already playing...
@@ -129,7 +127,7 @@ $(document).ready(function() {
             toggleButtonState(currentPlayer, 'pause')
             for (let i = 0; i < $('audio').length; i++) {
                 $('audio')[i].pause()
-                $('button').attr('data-state', 'play').html('play')
+                $('.audio-controls button').attr('data-state', 'play').html('play_circle_filled')
                 toggleButtonState(currentPlayer, 'pause')
             }
             startProgress(currentPlayer)

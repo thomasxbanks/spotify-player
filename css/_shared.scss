@@ -14,6 +14,10 @@ body {
   color: $clr_grey-dk;
 }
 
+body > header h1 {
+  margin: $b ($b / 2);
+}
+
 .grid {
   display: block;
   max-width: 1440px;

@@ -27,28 +27,15 @@ textarea:focus {
 }
 
 .audio-controls button {
-  background: #a00;
-  color: #fff;
-  font-size: 0;
+  color: $clr_white;
+  font-size: ($b * 3);
   font-weight: bold;
-  margin: 10px 0;
+  margin: ($b / 2) 0;
   cursor: pointer;
-  &:after {
-    display: block;
-    font-family: FontAwesome;
-    font-size: 15px;
-    padding: 10px 20px;
-    line-height: 15px;
-  }
+
   &[data-state="play"] {
-    &:after {
-      content: "\f04b";
-    }
   }
   &[data-state="pause"] {
-    &:after {
-      content: "\f04c";
-    }
   }
 
   &:hover {
