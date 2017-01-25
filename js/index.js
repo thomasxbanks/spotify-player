@@ -84,8 +84,8 @@ $(document).ready(function() {
         let i = $(currentPlayer.progress).attr('value')
         progressIndication = setInterval(function() {
             $(currentPlayer.progress).attr('value', currentPlayer.audio.currentTime)
-            $(currentPlayer.progress).attr('data-progress', Math.round(currentPlayer.audio.currentTime * 100) / 100)
-            $(currentPlayer.progress).attr('data-remaining', Math.round((max - currentPlayer.audio.currentTime) * 100) / 100)
+            $(currentPlayer.progress).attr('data-progress',~~(currentPlayer.audio.currentTime))
+            $(currentPlayer.progress).attr('data-remaining', ~~(max - currentPlayer.audio.currentTime))
             if (currentPlayer.audio.currentTime >= max) {
                 stopProgress(progressIndication, currentPlayer)
             }
