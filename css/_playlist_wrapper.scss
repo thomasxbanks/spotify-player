@@ -1,6 +1,12 @@
 /*Playlist Wrapper*/
 .playlister_wrapper {
-  display: block;
-  vertical-align: top;
-  font-size: 0;
+    display: block;
+    vertical-align: top;
+    font-size: 0;
+    -webkit-column-width: 300px;
+    -moz-column-width: 300px;
+    column-width: 300px;
+    -webkit-column-gap: ($b * 2);
+    -moz-column-gap: ($b * 2);
+    column-gap: ($b * 2);
 }

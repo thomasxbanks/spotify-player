@@ -1,10 +1,10 @@
-@import url("//fonts.googleapis.com/css?family=Arsenal");
+@import url("//fonts.googleapis.com/css?family=Inconsolata");
 @import url("//fonts.googleapis.com/icon?family=Material+Icons");
 html { font-size: 16px; }
 
 html * { box-sizing: border-box; }
 
-body { background: #eaeaee; margin: 0; padding: 0; font-family: "Arsenal", Arial, Helvetica, sans-serif; font-size: 16px; color: #4a4a4e; }
+body { background: #eaeaee; margin: 0; padding: 0; font-family: "Inconsolata", Arial, Helvetica, sans-serif; font-size: 16px; color: #4a4a4e; }
 
 body > header h1 { margin: 16px 8px; }
 
@@ -12,7 +12,7 @@ body > header h1 { margin: 16px 8px; }
 
 /*Header Contents*/
 /*Playlist Wrapper*/
-.playlister_wrapper { display: block; vertical-align: top; font-size: 0; }
+.playlister_wrapper { display: block; vertical-align: top; font-size: 0; -webkit-column-width: 300px; -moz-column-width: 300px; column-width: 300px; -webkit-column-gap: 32px; -moz-column-gap: 32px; column-gap: 32px; }
 
 .card-post { display: inline-block; vertical-align: top; max-width: 300px; font-size: 0; margin: 16px 8px; padding: 0; background: #fafafe; position: relative; box-shadow: 0 0 8px rgba(42, 42, 46, 0.2); text-align: left; }
 
@@ -36,9 +36,9 @@ body > header h1 { margin: 16px 8px; }
 
 .card-track .audio-controls progress { -webkit-appearance: none; appearance: none; width: 100%; height: 16px; transition: ease-in 50ms; position: relative; }
 
-.card-track .audio-controls progress:before { content: attr(data-progress); position: absolute; top: 0; left: 16px; font-size: 10.66667px; line-height: 16px; color: #4a4a4e; font-family: monospace; }
+.card-track .audio-controls progress:before { content: attr(data-progress); position: absolute; top: 0; left: 16px; font-size: 10.66667px; line-height: 16px; color: #4a4a4e; }
 
-.card-track .audio-controls progress:after { content: attr(data-remaining); position: absolute; top: 0; right: 16px; font-size: 10.66667px; line-height: 16px; color: #4a4a4e; font-family: monospace; }
+.card-track .audio-controls progress:after { content: attr(data-remaining); position: absolute; top: 0; right: 16px; font-size: 10.66667px; line-height: 16px; color: #4a4a4e; }
 
 .card-track progress[value]::-webkit-progress-bar { background: #fafafe; }
 
@@ -47,7 +47,7 @@ body > header h1 { margin: 16px 8px; }
 /*------------------------------------*  #BUTTON--NORMALISE
 \*------------------------------------*/
 /* Buttons are to be used when the result of the interaction occurs on the same page. Buttons should not be used for page links or submitting a form _to a different page_ */
-button { -webkit-appearance: none; -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: rgba(255, 255, 255, 0); -webkit-tap-highlight-color: transparent; border: none; }
+button { -webkit-appearance: none; -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: rgba(255, 255, 255, 0); -webkit-tap-highlight-color: transparent; border: none; font-family: "Inconsolata", Arial, Helvetica, sans-serif; }
 
 button::-moz-focus-inner, input::-moz-focus-inner, select::-moz-focus-inner, textarea::-moz-focus-inner { border: 0; }
 

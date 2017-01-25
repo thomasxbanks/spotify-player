@@ -89,7 +89,7 @@
   font-size: ($b / 1.5);
   line-height: $b;
   color: $clr_grey-dk;
-  font-family: monospace;
+
 }
 
 .card-track .audio-controls progress:after {
@@ -100,7 +100,7 @@
   font-size: ($b / 1.5);
   line-height: $b;
   color: $clr_grey-dk;
-  font-family: monospace;
+
 }
 
 .card-track progress[value]::-webkit-progress-bar {
