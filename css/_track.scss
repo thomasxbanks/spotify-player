@@ -107,9 +107,9 @@ $square: 320px;
 }
 
 .card-track progress[value]::-webkit-progress-bar {
-  background: $clr_white;
+  background: $clr_grey-lt;
 }
 
 .card-track progress[value]::-webkit-progress-value {
-  background: rgba($clr_grey-dk, 0.32);
+  background: rgba($clr_black, 0.32);
 }

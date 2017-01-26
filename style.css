@@ -40,9 +40,9 @@ body { background: #eaeaee; margin: 0; padding: 0; font-family: "Inconsolata", A
 
 .card-track .audio-controls progress:after { content: attr(data-remaining); position: absolute; top: 0; right: 16px; font-size: 10.66667px; line-height: 16px; color: #4a4a4e; }
 
-.card-track progress[value]::-webkit-progress-bar { background: #fafafe; }
+.card-track progress[value]::-webkit-progress-bar { background: #eaeaee; }
 
-.card-track progress[value]::-webkit-progress-value { background: rgba(74, 74, 78, 0.32); }
+.card-track progress[value]::-webkit-progress-value { background: rgba(42, 42, 46, 0.32); }
 
 /*------------------------------------*  #BUTTON--NORMALISE
 \*------------------------------------*/
