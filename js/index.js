@@ -6,9 +6,16 @@ $(document).ready(function() {
         success: function(data) {
             let dataTracks = data.tracks.items
             let tracksArray = []
+            console.log(data)
+
+            $('body > header .grid_inner').append('<h2>' + data.name + '</h2>')
+            if (data.description){
+              $('body > header .grid_inner').append('<p>'+data.description+'</p>')
+            }
 
             $.each(dataTracks, function(i, obj) {
                 var t = dataTracks[i].track
+
                 var trackObj = {
                     artist: t.artists[0].name,
                     album: t.album.name,

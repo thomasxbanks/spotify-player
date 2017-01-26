@@ -1,6 +1,6 @@
 {
   "collaborative": false,
-  "description": null,
+  "description": "This is the description for the playlist. A collection of great rock classics that will make you feel like a hero. The initial selection shown on this page is of the Most Popular artists. Those with a popularity rating of over 70.",
   "external_urls": {
     "spotify": "http://open.spotify.com/user/thomasxbanks/playlist/3IN3DqhHCTZKQE2V5QdHiB"
   },
@@ -27,7 +27,7 @@
       "width": 60
     }
   ],
-  "name": "Southern rock (2)",
+  "name": "Southern Rock",
   "owner": {
     "external_urls": {
       "spotify": "http://open.spotify.com/user/thomasxbanks"
